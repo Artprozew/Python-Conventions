@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "python-conventions"
+version = "0.0.1"
+description = "A repository featuring the most common Python conventions"
+authors = ["Artprozew <artprozew@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+black = "^24.4.2"
+mypy = "^1.10.0"
+flake8 = "^7.0.0"
+nox = "^2024.4.15"
+types-requests = "^2.31.0.20240406"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+mypy_path = "src/python_conventions"
